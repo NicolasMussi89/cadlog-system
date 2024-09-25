@@ -5,6 +5,20 @@
 
     $authController = new AuthController();
     $userController = new  UserController();
-    $dashboardController = new DashboardController();
+    // $dashboardController = new DashboardController();
 
+    // coleta a ação da URL, se não ouver ação definida, usa 'login'como padrão
+    $action = $_GET['action'] ?? 'login'; //usa operadpor de coalecencia nula (??) para definir 'login' se 'action' não estiver presente
+
+    switch ($action){
+        case 'login':
+            $authController->login();
+            break;
+        case 'register':
+            $userController->register();
+            break;
+        default:
+        $authController->login();
+        break;
+    }
 ?>

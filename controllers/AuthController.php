@@ -12,6 +12,21 @@ class AuthController
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $email = $_POST['email'];
             $senha = $_POST['senha'];
+            // password_verify verifica se a senha corresponde a um hash
+            $user = User::FindByEmail($email);
+
+            if($user &&password_verify($senha, $user['senha'])){
+                session_start();
+                
+                $_SESSION['usuario_id'] = $user['id'];
+                $_SESSION['perfil']     = $user['perfil'];
+
+                header('Location: index.php?actin=dashboard');
+            }else{
+                include 'views/register.php';
+            }
+        }else{
+            include 'views/login.php';
         }
     }
 }

@@ -7,7 +7,7 @@ class UserController
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $data = [
                 'nome' => $_POST['nome'],
-                'emial' => $_POST['email'],
+                'email' => $_POST['email'],
                 'senha'=> password_hash($_POST['senha'],PASSWORD_DEFAULT), //cria a senha
                 'perfil' => $_POST['perfil']
             ];

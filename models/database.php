@@ -5,11 +5,11 @@ class Database{
     public static function getComnction (){
         if(!self::$intance){
             $host       = 'localhost';
-            $db         = 'sistema_usuario';
+            $db         = 'sistema_usuarios';
             $user       = 'root';
             $password   = '';
 
-            self::$intance = new PDO("mysql:host=$host; dbname=$db, $user, $password");
+            self::$intance = new PDO("mysql:host=$host;dbname=$db", $user, $password);
 
             self::$intance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 

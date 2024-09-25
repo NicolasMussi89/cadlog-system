@@ -20,7 +20,7 @@ class user
 
     static public function create($data){
         $comn = Database::getComnction();
-        $stmt = $comn->prepare("INSERT INTO usuarios(nome, email, senha, perfil)VALUES (:nome, :email, :senha, :perfil)");
+        $stmt = $comn->prepare("INSERT INTO usuarios(nome, email, senha, perfil) VALUES (:nome, :email, :senha, :perfil)");
         $stmt->execute($data);
     
     }
