@@ -1,0 +1,98 @@
+/* Estilos gerais do corpo */
+body {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc00; /* Cor de destaque para o título */
+    margin-bottom: 20px;
+}
+
+/* Estilizando a tabela */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.styled-table thead tr {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+    background-color: #2b2b2b;
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #333;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #444;
+}
+
+/* Botões de ação */
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.btn:hover {
+    background-color: #e6b800;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #ffcc00;
+}
+
+/* Morcego no rodapé */
+footer::after {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Bat_icon.svg/2048px-Bat_icon.svg.png');
+    display: block;
+    margin: 10px auto;
+    width: 40px;
+    height: auto;
+    opacity: 0.8;
+}

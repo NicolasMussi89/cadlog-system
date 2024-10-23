@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
-    <link rel="stylesheet" type='text/css' media='screen' href="main.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="css/register.css">
 
 </head>
 <body>

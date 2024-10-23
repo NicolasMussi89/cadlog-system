@@ -1,0 +1,63 @@
+/* Definir um fundo escuro e fonte clara */
+body {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00; /* Título em uma cor destacada */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a.btn:hover {
+    background-color: #e6b800; /* Mudança de cor ao passar o mouse */
+}
+
+a {
+    color: #ffcc00;
+}
+
+/* Espaçamento para o rodapé */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #ffcc00;
+}
+
+/* Morcego no rodapé */
+footer::after {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Bat_icon.svg/2048px-Bat_icon.svg.png');
+    display: block;
+    margin: 10px auto;
+    width: 40px;
+    height: auto;
+    opacity: 0.8;
+}
