@@ -23,6 +23,9 @@
         case 'dashboard':
             $dashboardController->index();
             break;   
+        case 'list':
+            $userController ->List();
+            break;
         default:
         $authController->login();
         break;
