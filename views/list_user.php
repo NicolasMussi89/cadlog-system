@@ -38,8 +38,8 @@
                         <a href="">Editar</a>
                         <?php endif; ?>
                         <?php if($_SESSION['perfil']  == 'admin'): ?>
-                            <a href="">Excluir</a>
-                            <?php endif; ?>
+                            <a href="index.php?action=delete&id=<?=$user['id']?>" class="btn btn-delete" onclick="return confirm('Tem certeza que deseja excluir usuário?')">Excluir</a>
+                        <?php endif; ?>
  
  
                     </td>

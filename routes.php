@@ -24,7 +24,15 @@
             $dashboardController->index();
             break;   
         case 'list':
-            $userController ->List();
+            $userController->List();
+            break;
+        case 'edit': 
+            $id = $_GET['id'];
+            $userController->edit($id);
+            break;
+        case 'delete': 
+            $id = $_GET['id'];
+            $userController->delete($id);
             break;
         default:
         $authController->login();

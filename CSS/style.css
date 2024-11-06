@@ -44,20 +44,3 @@ a.btn:hover {
 a {
     color: #ffcc00;
 }
-
-/* Espaçamento para o rodapé */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    color: #ffcc00;
-}
-
-/* Morcego no rodapé */
-footer::after {
-    content: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Bat_icon.svg/2048px-Bat_icon.svg.png');
-    display: block;
-    margin: 10px auto;
-    width: 40px;
-    height: auto;
-    opacity: 0.8;
-}

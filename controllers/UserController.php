@@ -20,10 +20,21 @@ class UserController
         }
     }
 
+    public function edit($id){
+        session_start();
+    }
+    
     public function list (){
         $users = User::all();
         include 'views/list_user.php';
 
     }
+
+    public function delete($id){
+        User::delete($id);
+        header('Locantion: index.php?action=list');
+    }
+    
+    
 }
 ?>
